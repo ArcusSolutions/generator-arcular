@@ -1,4 +1,4 @@
-# generator-arcus-angular [![Build Status](https://secure.travis-ci.org/ArcusSolutions/generator-arcus-angular.png?branch=master)](https://travis-ci.org/ArcusSolutions/generator-arcus-angular)
+# generator-arcus-angular
 
 > [Yeoman](http://yeoman.io) generator for AngularJS - created by [Arcus Solutions](http://arcussolutions.com).
 
@@ -67,6 +67,8 @@ $ grunt --ENV="development"
 * [arcus-angular:filter](#filter)
 * [arcus-angular:data-service](#data-service)
 * [arcus-angular:model](#model)
+* [arcus-angular:repository](#repository)
+* [arcus-angular:utility](#utility)
 
 ### App
 
