@@ -1,6 +1,6 @@
 {
     "name": "generator-arcus-angular",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "description": "Arcus Solutions AngularJS project generator",
     "license": "MIT",
     "main": "app/index.js",
