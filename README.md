@@ -1,14 +1,14 @@
-# generator-arcus-angular
+# generator-arcular
 
 > [Yeoman](http://yeoman.io) generator for AngularJS - created by [Arcus Solutions](http://arcussolutions.com).
 
 
 ## Installation
 
-To install generator-arcus-angular from npm, run:
+To install generator-arcular from npm, run:
 
 ```bash
-$ npm install -g generator-arcus-angular
+$ npm install -g generator-arcular
 ```
 
 Make a new directory
@@ -20,7 +20,7 @@ $ mkdir my-angular-project && cd $_
 Initiate the generator
 
 ```bash
-$ yo arcus-angular [app-name]
+$ yo arcular [app-name]
 ```
 
 ## Usage
@@ -62,13 +62,13 @@ $ grunt --ENV="development"
 ## Sub-generators
 
 * [angular](#app) (aka [angular:app](#app))
-* [arcus-angular:controller](#controller)
-* [arcus-angular:directive](#directive)
-* [arcus-angular:filter](#filter)
-* [arcus-angular:data-service](#data-service)
-* [arcus-angular:model](#model)
-* [arcus-angular:repository](#repository)
-* [arcus-angular:utility](#utility)
+* [arcular:controller](#controller)
+* [arcular:directive](#directive)
+* [arcular:filter](#filter)
+* [arcular:data-service](#data-service)
+* [arcular:model](#model)
+* [arcular:repository](#repository)
+* [arcular:utility](#utility)
 
 ### App
 
@@ -76,7 +76,7 @@ Sets up a new AngularJS app, generating all the boilerplate you need to get star
 installs Bootstrap and additional AngularJS modules, such as angular-resource (installed by default).
 
 ```bash
-$ yo arcus-angular
+$ yo arcular
 ```
 
 ### Controller
@@ -84,7 +84,7 @@ $ yo arcus-angular
 Generates a controller in `app/scripts/controllers`.
 
 ```bash
-$ yo arcus-angular:controller user
+$ yo arcular:controller user
 ```
 
 Above example produces `app/scripts/controllers/UserCtrl.js`.
@@ -101,7 +101,7 @@ angular.module('myApp').controller('UserCtrl', ['$scope',
 Generates a controller in `app/scripts/directives`.
 
 ```bash
-$ yo arcus-angular:directive input
+$ yo arcular:directive input
 ```
 
 Above example produces `app/scripts/directives/InputDirective.js` and `app/views/directives/input/root.html`.
@@ -132,7 +132,7 @@ angular.module('myApp').directive('input', ['$scope',
 Generates a filter in `app/scripts/filters`.
 
 ```bash
-$ yo arcus-angular:filter user
+$ yo arcular:filter user
 ```
 
 Above example produces `app/scripts/filters/UserFilter.js`.
@@ -161,7 +161,7 @@ Data services in AngularJS are built using factories and leverage the `$q` provi
 Generates a data service in `app/scripts/data-services`.
 
 ```bash
-$ yo arcus-angular:data-service google
+$ yo arcular:data-service google
 ```
 
 Above example produces `app/scripts/data-services/GoogleDataService.js`.
@@ -208,7 +208,7 @@ content via a constructor.
 Generates a model in `app/scripts/models`.
 
 ```bash
-$ yo arcus-angular:model user
+$ yo arcular:model user
 ```
 
 Above example produces `app/scripts/models/UserModel.js`.
@@ -256,7 +256,7 @@ requests.
 Generates a repository in `app/scripts/repositories`.
 
 ```bash
-$ yo arcus-angular:repository twitter
+$ yo arcular:repository twitter
 ```
 
 Above example produces `app/scripts/repositories/TwitterRepository.js`.
@@ -287,7 +287,7 @@ are simply where things go when they don't belong anywhere else.
 Generates a utility in `app/scripts/utilities`.
 
 ```bash
-$ yo arcus-angular:utility alert
+$ yo arcular:utility alert
 ```
 
 Above example produces `app/scripts/utilities/AlertUtility.js`.

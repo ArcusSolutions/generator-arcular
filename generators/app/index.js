@@ -261,7 +261,7 @@ var ArcusAngularGenerator = yeoman.generators.Base.extend({
         this.mkdir('app/views/main');
         this.copy('app/views/main/root.html', 'app/views/main/root.html');
 
-        this.invoke('arcus-angular:controller', {
+        this.invoke('arcular:controller', {
             args: ['main']
         });
     }
