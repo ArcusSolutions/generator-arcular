@@ -1,7 +1,0 @@
-language: node_js
-node_js:
-  - '0.10'
-before_install:
-  - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-arcus-angular' ]; then cd .. && eval "mv $currentfolder generator-arcus-angular" && cd generator-arcus-angular; fi
-

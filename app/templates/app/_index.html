@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="<%= name %>">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title><%= name %></title>
+
+    <!-- build:css css/<%= name %>.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <link rel="stylesheet" href="css/app.css"/>
+    <!-- endbuild -->
+</head>
+<body>
+
+    <% if (uiRouterModule) {
+    %><ui-view></ui-view><%
+    } else if (routeModule) {
+    %><div ng-view></div><%
+    } %>
+
+    <!-- build:js js/<%= name %>.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+
+    <!-- arcular:controller -->
+    <!-- endarcular -->
+
+    <!-- arcular:repository -->
+    <!-- endarcular -->
+
+    <!-- arcular:model -->
+    <!-- endarcular -->
+
+    <!-- arcular:parser -->
+    <!-- endarcular -->
+
+    <!-- arcular:data-service -->
+    <!-- endarcular -->
+
+    <!-- arcular:utility -->
+    <!-- endarcular -->
+
+    <!-- arcular:directive -->
+    <!-- endarcular -->
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script type="text/javascript" src="js/events.js"></script>
+    <script type="text/javascript" src="js/arcus.config.js"></script>
+    <!-- endbuild -->
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "production": {
+        "constants": {
+            "DEBUG_MODE": false
+        }
+    },
+    "staging": {
+        "constants": {
+            "DEBUG_MODE": false
+        }
+    },
+    "development": {
+        "constants": {
+            "DEBUG_MODE": true
+        }
+    }
+}
