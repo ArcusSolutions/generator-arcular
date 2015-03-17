@@ -1,4 +1,4 @@
-angular.module('<%= name %>', [<% if (uiRouterModule) { %>'$stateProvider', '$urlRouterProvider',<% } %>
+angular.module('<%= name %>').config([<% if (uiRouterModule) { %>'$stateProvider', '$urlRouterProvider',<% } %>
     function(<% if (uiRouterModule) { %>$stateProvider, $urlRouterProvider<% } %>) {
         'use strict';
 

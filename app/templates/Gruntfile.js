@@ -31,10 +31,10 @@ module.exports = function(grunt) {
 
         wiredep: {
             target: {
-                src: 'app/index.html',
-                ignorePath: 'app/',
-                jsPattern: '<script type="text/javascript" src="{{filePath}}"></script>',
-                cssPattern: '<link rel="stylesheet" href="{{filePath}}" >'
+                src: [
+                    'app/index.html',
+                    'app'
+                ]
             }
         },
         clean: {
@@ -243,6 +243,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('build', [
         'jshint',
+        'wiredep',
         'clean',
         _selectedEnvironment,
         'useminPrepare',
@@ -259,7 +260,8 @@ module.exports = function(grunt) {
         'htmlmin'
     ]);
 
-    grunt.registerTask('serve', [<% if (csspreprocessor.indexOf('sass') !== -1) { %>
+    grunt.registerTask('serve', [
+        'wiredep',<% if (csspreprocessor.indexOf('sass') !== -1) { %>
         'sass',<% } else if (csspreprocessor.indexOf('less') !== -1) { %>
         'less',<% } %>
         _selectedEnvironment,
