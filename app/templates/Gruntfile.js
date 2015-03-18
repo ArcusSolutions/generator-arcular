@@ -32,8 +32,11 @@ module.exports = function(grunt) {
         wiredep: {
             target: {
                 src: [
-                    'app/index.html',
-                    'app'
+                    'app/index.html'<% if (csspreprocessor === 'sass') { %>,
+                    'app/scss/app.scss'
+                    <% } else if (csspreprocessor === 'less') { %>,
+                    'app/less/app.less'
+                    <% } %>
                 ]
             }
         },
