@@ -33,10 +33,8 @@ module.exports = function(grunt) {
             target: {
                 src: [
                     'app/index.html'<% if (csspreprocessor === 'sass') { %>,
-                    'app/scss/app.scss'
-                    <% } else if (csspreprocessor === 'less') { %>,
-                    'app/less/app.less'
-                    <% } %>
+                    'app/scss/app.scss'<% } else if (csspreprocessor === 'less') { %>,
+                    'app/less/app.less'<% } %>
                 ]
             }
         },

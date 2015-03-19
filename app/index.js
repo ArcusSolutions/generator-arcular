@@ -332,6 +332,8 @@ module.exports = yeoman.generators.Base.extend({
             angMods.push("'pasvaz.bindonce'");
         }
 
+        angMods.push("'Arcus.Config'");
+
         if (angMods.length) {
             this.angularDeps = '\n    ' + angMods.join(',\n    ') + '\n';
             this.angularProviders = angProviders.join(', ');
